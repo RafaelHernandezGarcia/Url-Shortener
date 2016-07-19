@@ -1,0 +1,8 @@
+<h1>Listo of URLS</h1>
+<p><% @all_urls.each do |url|%>
+  <%= link_to url.id, url.original%><text>. </text>
+  <%= url.original %><br>
+  <% end %>
+
+  <br>
+  <%= link_to 'Create NEW', '/urls/new' %>
